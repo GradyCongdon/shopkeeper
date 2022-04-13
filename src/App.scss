@@ -1,24 +1,52 @@
 :root {
   --layout-nav-width: 80px;
 }
+.App {
+  min-height: 100vh;
 
-main {
+}
+
+.App > main {
   margin-inline-start: var(--layout-nav-width);
+
 
   & > header {
     padding: 16px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 }
 
-article {
+.Page {
   padding: 16px 24px;
+  display: grid;
+  grid-template-areas: 
+    "header header header header"  
+    "main main main aside";
+    justify-items: stretch;
+
   header {
     display: block;
+    grid-area: header;
   }
+  & > main {
+  grid-area: main;
+
+  }    
+  & > aside {
+      grid-area: aside;
+      padding: 16px 24px;
+    }
+
+
 }
+  hr {
+    margin: 16px 0;
+  }
+
+
 
 h1 {
   display: flex;

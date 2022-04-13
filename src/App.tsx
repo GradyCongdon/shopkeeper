@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <main>
+      <main className="Page">
         <header>
           <Select
             icon={<HomeIcon />}
@@ -27,16 +27,16 @@ function App() {
           <Search />
           <Button>View Carrier Details</Button>
         </header>
-        <article>
-          <header>
-            <h1>
-              Order #5780
-              <Tag>Paid</Tag>
-            </h1>
-            <div>
-              <p>April 12 2022 at 10:08 PM</p>
-            </div>
-          </header>
+        <header>
+          <h1>
+            Order #5780
+            <Tag>Paid</Tag>
+          </h1>
+          <div>
+            <p>April 12 2022 at 10:08 PM</p>
+          </div>
+        </header>
+        <main>
           <div className="Card">
             <header>
               <h2>Customer's Cart</h2>
@@ -58,12 +58,30 @@ function App() {
               <p>Color: Granite</p>
             </Media>
           </div>
-          {/* <Cart />
-        <Customer />
-        <ShippingSummary />
-        <Carrier />
-        <Activity /> */}
-        </article>
+        </main>
+
+        <aside>
+          <div className="Card">
+            <header>
+              <h2> Customer </h2>
+            </header>
+            <div>
+              <h3>Shipping Address</h3>
+              <p>1823 Wingding St</p>
+              <p>Birmingham, IL</p>
+              <p>47089</p>
+              <p>USA</p>
+            </div>
+            <hr />
+            <div>
+              <h3>Billing Address</h3>
+              <p>1823 Wingding St</p>
+              <p>Birmingham, IL</p>
+              <p>47089</p>
+              <p>USA</p>
+            </div>
+          </div>
+        </aside>
       </main>
     </div>
   );
