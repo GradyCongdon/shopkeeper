@@ -1,0 +1,44 @@
+:root {
+  --layout-nav-width: 80px;
+}
+
+main {
+  margin-inline-start: var(--layout-nav-width);
+
+  & > header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+article {
+  padding: 16px 24px;
+  header {
+    display: block;
+  }
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+}
+
+.Tag {
+  font-size: 1.1rem;
+}
+
+.Card {
+  border-radius: var(--border--soft);
+  background-color: var(--color-contrast--low);
+  padding: 16px 32px;
+  margin: 16px 0;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+}

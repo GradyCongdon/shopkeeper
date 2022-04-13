@@ -1,0 +1,28 @@
+.Search {
+  position: relative;
+  background-color: var(--color-base);
+  input {
+    border-radius: var(--border--soft);
+    border: 1px solid var(--color-contrast--medium);
+    height: 48px;
+    width: 400px;
+    padding: 16px;
+  }
+  .remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 32px;
+    padding: 0;
+    padding-right: 4px;
+    color: var(--color-contrast--medium);
+    background-color: var(--color-base);
+    &:hover {
+      color: var(--color-contrast--high);
+    }
+  }
+}

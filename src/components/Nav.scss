@@ -1,0 +1,20 @@
+.Nav {
+  position: fixed;
+  height: 100vh;
+  padding: 16px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  .end {
+    margin-top: auto;
+  }
+  button {
+    margin: 8px 0;
+    width: 48px;
+    height: 48px;
+    &.first {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+}

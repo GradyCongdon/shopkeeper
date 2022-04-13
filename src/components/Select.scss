@@ -1,0 +1,33 @@
+.Select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--border--soft);
+  background-color: var(--color-contrast--low);
+  min-height: 48px;
+  .icon {
+    background-color: var(--color-accent--secondary);
+    margin-inline-end: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--color--base);
+    margin-inline-start: -4px;
+    margin-block-start: -4px;
+    margin-block-end: -4px;
+    svg {
+      transform: scale(1.6);
+    }
+  }
+  select {
+    background-color: var(--color-contrast--low);
+  }
+  .handle {
+    margin-inline-start: 8px;
+    margin-inline-end: 4px;
+    svg {
+      transform: scale(1.6);
+      color: var(--color-contrast--medium);
+    }
+  }
+}
